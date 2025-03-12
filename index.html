@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Elegant Login</title>
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 to-cyan-900">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+    <main
+        class="text-white bg-gradient-to-br from-cyan-950/90 via-blue-900/80 to-cyan-800/70 inset-ring-8 inset-ring-cyan-600/30 shadow-[inset_0_0_30px_rgba(8,145,178,0.6)] min-h-screen flex items-center justify-center p-6 relative overflow-hidden">
+        <div
+            class="absolute -top-40 -left-40 w-80 h-80 bg-cyan-400 rounded-full filter blur-3xl opacity-20 animate-pulse">
+        </div>
+        <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-blue-400 rounded-full filter blur-3xl opacity-20 animate-pulse"
+            style="animation-delay: 2s;"></div>
+
+        <form action=""
+            class="shadow-2xl border border-white/20 backdrop-blur-xl bg-white/10 flex items-center justify-center rounded-2xl flex-col p-8 w-full max-w-md relative z-10 hover:shadow-cyan-500/20 transition-all duration-500">
+            <div
+                class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center shadow-lg">
+                <i class="fas fa-user-lock text-white text-xl"></i>
+            </div>
+
+            <fieldset class="flex flex-col items-center w-full">
+                <legend class="text-3xl text-center font-light tracking-wide text-white mb-6 mt-4">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-200 to-white">Login</span>
+                </legend>
+
+                <div class="flex flex-col p-4 w-full space-y-2">
+                    <label for="username" class="text-cyan-100 text-sm font-medium ml-1">Username</label>
+                    <div class="relative">
+                        <i class="fas fa-user absolute left-3 top-1/2 -translate-y-1/2 text-cyan-300/70"></i>
+                        <input type="text" name="username" id="username" placeholder="email@example.com"
+                            class="bg-white/10 border-cyan-600/50 border-b-2 outline-none p-3 pl-10 rounded-md w-full placeholder-cyan-200/30 focus:border-cyan-400 transition-all duration-300 focus:bg-white/20">
+                    </div>
+                </div>
+
+                <div class="flex flex-col p-4 w-full space-y-2">
+                    <label for="password" class="text-cyan-100 text-sm font-medium ml-1">Password</label>
+                    <div class="relative">
+                        <i class="fas fa-lock absolute left-3 top-1/2 -translate-y-1/2 text-cyan-300/70"></i>
+                        <input type="password" name="password" id="password" placeholder="••••••••"
+                            class="bg-white/10 border-cyan-600/50 border-b-2 p-3 pl-10 rounded-md outline-none w-full placeholder-cyan-200/30 focus:border-cyan-400 transition-all duration-300 focus:bg-white/20">
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center w-full px-4 mt-2 mb-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="remember" class="mr-2 accent-cyan-500">
+                        <label for="remember" class="text-sm text-cyan-100">Remember me</label>
+                    </div>
+                    <a href="#" class="text-sm text-cyan-300 hover:text-cyan-100 transition-colors">Forgot Password?</a>
+                </div>
+
+                <div class="flex justify-center p-4 w-full">
+                    <button type="submit"
+                        class="bg-gradient-to-r from-cyan-600 to-cyan-400 border border-cyan-400/30 shadow-lg shadow-cyan-700/30 text-white font-medium px-6 py-3 rounded-md cursor-pointer w-full transition-all duration-300 hover:shadow-cyan-500/50 hover:-translate-y-0.5 active:translate-y-0 group relative overflow-hidden">
+                        <span class="relative z-10">Sign In</span>
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </button>
+                </div>
+
+                <div class="text-center mt-4">
+                    <span class="text-cyan-100/70 text-sm">Don't have an account? <a href="#"
+                            class="text-cyan-300 hover:text-white transition-colors">Sign up</a></span>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
