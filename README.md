@@ -33,8 +33,8 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/yourusername/tailwind-login-page.git
-   cd tailwind-login-page
+   git clone https://github.com/SayanBanerjee-007/Login-Page-By-Claude-Saunnet-3.7
+   cd Login-Page-By-Claude-Saunnet-3.7
    ```
 
 2. Install dependencies
